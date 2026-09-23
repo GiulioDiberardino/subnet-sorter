@@ -32,7 +32,7 @@ describe("validateInput", () => {
   });
 
   it("flags invalid ip", () => {
-    expect(validateInput("999.1.1.1", "24")[0].field).toBe("ip");
+    expect(validateInput("999.1.1.1", "24")[0]?.field).toBe("ip");
   });
 });
 
@@ -147,6 +147,6 @@ describe("buildQuickReference", () => {
       hostBits: 8,
       usableHosts: 254,
     });
-    expect(rows[8].usableHosts).toBe(1);
+    expect(rows[8]?.usableHosts).toBe(1);
   });
 });
