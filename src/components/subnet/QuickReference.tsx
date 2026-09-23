@@ -3,7 +3,7 @@ import { buildQuickReference } from "@/lib/subnet";
 const rows = buildQuickReference(8, 32);
 
 interface QuickReferenceProps {
-  activeCidr?: number;
+  activeCidr?: number | undefined;
 }
 
 export function QuickReference({ activeCidr }: QuickReferenceProps) {
