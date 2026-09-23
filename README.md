@@ -48,6 +48,18 @@ CIDR notation (`192.168.20.224/27`) states how many leading bits belong to the n
 
 ## Technologies
 
+## Development Approach
+
+This project was developed as a practical networking and cybersecurity
+learning project.
+
+The application was built using an AI-assisted development workflow with
+Lovable. The generated implementation was reviewed, tested and validated
+against IPv4 subnetting rules and edge cases.
+
+The subnet calculation logic is isolated from the user interface and covered
+by automated unit tests using Vitest.
+
 - React 19 + TypeScript (strict mode)
 - TanStack Start / TanStack Router
 - Tailwind CSS v4 (design tokens in `src/styles.css`)
